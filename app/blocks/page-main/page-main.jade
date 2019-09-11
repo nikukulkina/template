@@ -1,2 +1,8 @@
+include /blocks/container/container
+include /blocks/header/header
+
 mixin page-main()
 	+b.page-main&attributes(attributes)
+		+e.header-wrap
+			+container()
+				+header()

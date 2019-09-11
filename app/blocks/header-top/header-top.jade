@@ -1,0 +1,7 @@
+include /blocks/header-logo/header-logo
+include /blocks/header-action/header-action
+
+mixin header-top()
+	+b.header-top&attributes(attributes)
+		+header-logo()
+		+header-action()

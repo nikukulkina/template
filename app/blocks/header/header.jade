@@ -1,0 +1,7 @@
+include /blocks/header-top/header-top
+include /blocks/header-main/header-main
+
+mixin header()
+	+b.header&attributes(attributes)
+		+header-top()
+		+header-main()
