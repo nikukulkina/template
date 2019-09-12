@@ -1,4 +1,6 @@
 include /blocks/icon/icon
+include /blocks/nav/nav
+
 
 mixin header-action()
 	+b.header-action&attributes(attributes)
@@ -13,5 +15,10 @@ mixin header-action()
 					+icon('telegram').icon
 				+e('p').phone 8 (800) 
 					+e('span').phone_colored 551 37 01
- 
+		+nav([
+			{name:'Главная', href:'#'},
+			{name:'Бесплатный аудит честности', href:'#'},
+			{name:'Арбитраж', href:'#'},
+			{name:'Авторский блог', href:'#'},
+			{name:'Контакты', href:'#'}])
 			
