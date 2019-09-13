@@ -1,0 +1,35 @@
+.table
+	margin-top 44px
+	overflow hidden
+	width 100%
+	font-size 18px
+	border-top-left-radius 10px
+	border-top-right-radius 10px
+
+	&__row:nth-child(odd)
+		background-color #f7f9fd
+
+	&__header
+		padding-left 30px
+		height 50px
+		font-family 'Oswald'
+		font-size 16px
+		text-align left
+		color #ffffff
+		background-color $blue
+		border-right 1px solid #4584cd
+		&_first-column
+			width 297px
+		&_second-column
+			width 407px
+	&__cell
+		padding-left 30px
+		height 50px
+		line-height 30px
+		&_second-column
+			width 407px
+
+		&_title
+			width 297px
+			font-size 18px
+			font-weight 600

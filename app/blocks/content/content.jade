@@ -1,0 +1,9 @@
+include /blocks/article/article
+
+mixin content()
+	+b.content&attributes(attributes)
+		+e.top
+			+e('a').name Название категории
+			+e('p').views Просмотров:&nbsp;
+				+e('span').views-count 320
+		+article()

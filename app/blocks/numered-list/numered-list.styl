@@ -1,0 +1,27 @@
+.numered-list
+	margin-top 36px
+	&__title
+		padding-bottom 31px
+		font-family 'Oswald'
+		font-size 30px
+		font-weight 500
+	&__list
+		list-style-type none
+		counter-reset number
+
+	&__item
+		position relative
+		margin-bottom 10px
+		padding-left 43px
+
+		&:before
+			position absolute
+			left 0
+			font-family 'Oswald'
+			font-size 22px
+			font-weight bold
+			content counter(number)
+			counter-increment number
+			color $blue
+
+			

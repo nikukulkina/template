@@ -1,0 +1,21 @@
+.quote
+	position relative
+	margin-top 51px
+	margin-left 20px
+	padding 40px 52px
+	background-color #f7f9fd
+	border-radius 10px
+	&::before
+		position absolute
+		top 50%
+		left 0
+		width 40px
+		height 40px
+		content ''
+		background-color $blue
+		background-image url(/assets/images/left-quote-mark.png)
+		background-repeat no-repeat
+		background-position center
+		border-radius 50%
+		transform translate(-50%, -50%)
+		box-shadow -5px 3px 10px $blue

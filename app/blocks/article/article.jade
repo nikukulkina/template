@@ -1,0 +1,19 @@
+include /blocks/table/table
+include /blocks/marked-list/marked-list
+include /blocks/numered-list/numered-list
+include /blocks/quote/quote
+include /blocks/button/button
+
+mixin article()
+	+b('article').article&attributes(attributes)
+		+e('img').image(src='/assets/images/category-img.png')
+		+e('p').text Для начала давайте разберемся. Что следует понимать под второстепенными показателями? Итак, второстепенные показатели – это данные о работе рекламной кампании. Такие как количество кликов, кликабельность объявления (CTR), процент отказов,  время на сайте, глубина просмотра, позиции показа, средняя цена клика.
+		+e('p').text Всю правду о этих данных мы рассмотрим со стороны, когда бизнесу от контекстной рекламы нужны заявки или продажи. Прежде, чем перейти к причинам, почему на них активно делают акцент и используют в качестве оценки работы. Давайте разберем истоки проблемы. Откуда же все началось?
+		+table()
+		+marked-list()
+		+numered-list()
+		+quote()
+		+e.footer
+			+button()
+			+e('p').published Александр Танин, 26 февраля 2019 в 12:01
+
