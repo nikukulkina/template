@@ -1,0 +1,9 @@
+include /blocks/slide/slide
+
+mixin slider()
+	+b.slider&attributes(attributes)
+		+e('h2').title Другие статьи
+		+slide([
+			{src: '/assets/images/slide1.png', title: 'Как проверить уровень настройки рекламной компании конкурента'},
+			{src: '/assets/images/slide2.png', title: 'Вся правда о второстепенных показателях в контекстной рекламе'}
+			])
