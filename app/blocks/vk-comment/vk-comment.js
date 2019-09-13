@@ -1,4 +1,3 @@
-// import
 export const comment = () => {
-	console.log(2);
+	VK.Widgets.Comments('vk_comments', {limit: 10, attach: '*'});
 };
