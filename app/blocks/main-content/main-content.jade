@@ -1,0 +1,9 @@
+include /blocks/content/content
+include /blocks/right-bar/right-bar
+
+
+mixin main-content()
+	+b.main-content&attributes(attributes)
+		+e.wrap
+			+content()
+			+right-bar()

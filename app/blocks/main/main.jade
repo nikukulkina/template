@@ -1,10 +1,7 @@
 include /blocks/container/container
-include /blocks/content/content
-include /blocks/right-bar/right-bar
-
+include /blocks/main-content/main-content
 
 mixin main()
 	+b.main&attributes(attributes)
 		+container()
-			+content()
-			+right-bar()
+			+main-content()

@@ -1,0 +1,16 @@
+mixin categories()
+	+b.categories&attributes(attributes)
+		+e('h3').title Категории
+		+e('ul').list
+			+e('li').item 
+				+e('a').link._active(href="#") Все
+			+e('li').item 
+				+e('a').link(href="#") Обучающие статьи
+			+e('li').item 
+				+e('a').link(href="#") Истории
+			+e('li').item 
+				+e('a').link(href="#") Новости
+			+e('li').item
+				+e('a').link(href="#") Рекламодатели
+			+e('li').item
+				+e('a').link(href="#") Мои статьи в СМИ

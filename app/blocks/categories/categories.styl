@@ -1,0 +1,41 @@
+.categories
+	position relative
+	&::before
+		position absolute
+		top -119%
+		left 50%
+		content url('/assets/images/dude3.png')
+		transform translateX(-60%)
+	&__title
+		margin-top 139px
+		padding-top 9px
+		padding-bottom 16px
+		font-family 'Oswald'
+		font-size 24px 
+		font-weight bold
+		text-align center
+		color #ffffff
+		background linear-gradient(#1479ee, #0f54a5)
+		border-top-left-radius 10px
+		border-top-right-radius 10px
+		box-shadow -8px 15px 10px rgba(20, 121, 238, .21)
+		
+	&__list
+		padding-top 24px
+		padding-left 49px
+		padding-bottom 6px
+		list-style-position outside
+		list-style-image url('/assets/images/list-mark.png')
+		background-color #f7f9fd
+
+	&__item
+		margin-bottom 22px
+		padding-left 23px
+		font-size 18px
+		font-weight bold
+		line-height 18px
+	&__link
+		text-decoration none
+		color #272f31
+		&_active
+			color $blue

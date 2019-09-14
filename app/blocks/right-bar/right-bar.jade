@@ -1,2 +1,7 @@
+include /blocks/categories/categories
+include /blocks/popular-articles/popular-articles
+
 mixin right-bar()
 	+b.right-bar&attributes(attributes)
+		+categories()
+		+popular-articles()
