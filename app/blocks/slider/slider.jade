@@ -1,9 +1,29 @@
-include /blocks/slide/slide
+include /blocks/slides/slides
 
 mixin slider()
 	+b.slider&attributes(attributes)
 		+e('h2').title Другие статьи
-		+slide([
-			{src: '/assets/images/slide1.png', title: 'Как проверить уровень настройки рекламной компании конкурента'},
-			{src: '/assets/images/slide2.png', title: 'Вся правда о второстепенных показателях в контекстной рекламе'}
-			])
+		+e.slider-container.swiper-container
+			+e.slides.swiper-wrapper
+				+e.slide.swiper-slide
+					+e('img').img(src='/assets/images/slide1.png')
+					+e('p').slide-title Как проверить уровень настройки рекламной компании конкурента
+				+e.slide.swiper-slide
+					+e('img').img(src='/assets/images/slide2.png')
+					+e('p').slide-title Вся правда о второстепенных показателях в контекстной рекламе
+				+e.slide.swiper-slide
+					+e('img').img(src='/assets/images/slide1.png')
+					+e('p').slide-title Как проверить уровень настройки рекламной компании конкурента
+				+e.slide.swiper-slide
+					+e('img').img(src='/assets/images/slide2.png')
+					+e('p').slide-title Вся правда о второстепенных показателях в контекстной рекламе
+			+e.btn-prev.swiper-button-prev
+			+e.btn-next.swiper-button-next
+
+		
+		//- ([
+		//- 	{src: '/assets/images/slide1.png', title: 'Как проверить уровень настройки рекламной компании конкурента'},
+		//- 	{src: '/assets/images/slide2.png', title: 'Вся правда о второстепенных показателях в контекстной рекламе'},
+		//- 	{src: '/assets/images/slide1.png', title: 'Как проверить уровень настройки рекламной компании конкурента'},
+		//- 	{src: '/assets/images/slide2.png', title: 'Вся правда о второстепенных показателях в контекстной рекламе'}
+		//- 	])

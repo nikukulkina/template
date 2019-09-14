@@ -1,4 +1,12 @@
-// import
+import Swiper from 'swiper';
+
 export const initialSlider = () => {
-	console.log(1);
+	const slider = new Swiper('.swiper-container', {
+		slidesPerView: 2,
+		spaceBetween: 30,
+		navigation: {
+			nextEl: '.swiper-button-prev',
+			prevEl: '.swiper-button-next'
+		}
+	});
 };

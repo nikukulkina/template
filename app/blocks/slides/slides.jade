@@ -1,5 +1,5 @@
-mixin slide(items)
-	+b.slide&attributes(attributes)
+mixin slides(items)
+	+b.slides&attributes(attributes)
 		each item in items
 			+e('img').img(src=item.src)
 			+e('p').title!=item.title 
