@@ -41,6 +41,7 @@
 	&__input-img
 		padding-right 21px
 	&__input
+		width 100%
 		border transparent
 		&_phone
 			font-family 'Oswald'
@@ -49,20 +50,28 @@
 			letter-spacing 4px
 	&__btn-wrap
 		position relative
-		margin-bottom 25px
+		z-index 1
+		top 0
+		left 0
+		padding 12px 20px 18px
+		display flex
+		justify-content center
+		align-items center
 		width 100%
+		height 100%
 		&::after
 			position absolute
-			top 67%
-			left 1%
-			width 98%
+			z-index -1
+			right 5px
+			left 5px
+			bottom -5px
 			height 24px
 			content ''
 			background-color #272f31
 			border-radius 10px
 			opacity .5
 	&__form-submit
-		padding 12px 20px 18px
+		margin-bottom 25px
 		width 100%
 		font-family 'Oswald'
 		font-size 20px
