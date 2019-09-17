@@ -17,3 +17,29 @@
 		font-weight bold
 		line-height 31px
 		letter-spacing .1px
+	&__img
+		position relative
+	&__btn-img
+		padding 16px 18px
+		background-color #edf1f7
+		border-radius 50%
+		transition background-color .3s ease-in
+		&:hover
+			background linear-gradient(#3c90f1, #2665ae)
+	&__btn-prev,
+	&__btn-next
+		position absolute
+		z-index 5
+		top 35%
+		padding 8px
+		width 60px
+		height 60px
+		cursor pointer
+		background-color #ffffff
+		border none
+		border-radius 50%
+	&__btn-prev
+		transform translate(-30px, -50%)
+	&__btn-next
+		right 0
+		transform translate(30px, -50%)

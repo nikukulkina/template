@@ -1,4 +1,6 @@
 include /blocks/slides/slides
+include /blocks/icon/icon
+
 
 mixin slider()
 	+b.slider&attributes(attributes)
@@ -17,8 +19,11 @@ mixin slider()
 				+e.slide.swiper-slide
 					+e('img').img(src='/assets/images/slide2.png')
 					+e('p').slide-title Вся правда о второстепенных показателях в контекстной рекламе
-			+e.btn-prev.swiper-button-prev
-			+e.btn-next.swiper-button-next
+			+e('button').btn-prev
+				+e('img').btn-img(src='/assets/images/left.png')
+			+e('button').btn-next
+				+e('img').btn-img(src='/assets/images/right.png')
+
 
 		
 		//- ([
