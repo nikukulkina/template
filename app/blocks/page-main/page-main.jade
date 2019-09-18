@@ -2,6 +2,8 @@ include /blocks/container/container
 include /blocks/header/header
 include /blocks/main/main
 include /blocks/form/form
+include /blocks/footer/footer
+include /blocks/copyrights/copyrights
 
 mixin page-main()
 	+b.page-main&attributes(attributes)
@@ -12,3 +14,9 @@ mixin page-main()
 		+e.form-wrap
 			+container()
 				+form()
+		+e.footer-wrap
+			+container()
+				+footer()
+		+e.copyrights-wrap
+			+container()
+				+copyrights()

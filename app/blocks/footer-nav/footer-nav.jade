@@ -1,0 +1,4 @@
+mixin footer-nav(items)
+	+b.footer-nav&attributes(attributes)
+		each item in items
+			+e('a').link(href=item.href)!= item.name

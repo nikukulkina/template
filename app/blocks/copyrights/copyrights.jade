@@ -1,0 +1,9 @@
+include /blocks/container/container
+
+mixin copyrights()
+	+b.copyrights&attributes(attributes)
+		+e('span').copyright © Александр Танин 2019 Все права защищены
+		+e.links
+			+e('a').link(href='#') Политика конфиденциальности
+			+e('a').link(href='#') Договор оферты
+			+e('a').link(href='#') Карта сайта

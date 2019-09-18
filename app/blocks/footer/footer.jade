@@ -1,0 +1,18 @@
+include /blocks/footer-logo/footer-logo
+include /blocks/call/call
+include /blocks/phone/phone
+include /blocks/footer-nav/footer-nav
+
+mixin footer()
+	+b('footer').footer&attributes(attributes)
+		+footer-logo()
+		+footer-nav([
+			{name:'Главная', href:'#'},
+			{name:'Бесплатный аудит честности', href:'#'},
+			{name:'Арбитраж', href:'#'},
+			{name:'Авторский блог', href:'#'},
+			{name:'Контакты', href:'#'}])
+		+call()
+		+e.contacts
+			+phone()
+			+e('a').e-mail(href='#') info@честный-контекст.рф

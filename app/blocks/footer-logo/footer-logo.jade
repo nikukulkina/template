@@ -1,6 +1,7 @@
-mixin header-logo()
-	+b.header-logo&attributes(attributes)
-		+e('img').logo(src="./assets/images/logo.png", alt="logo")
+mixin footer-logo()
+	+b.footer-logo&attributes(attributes)
+		+e('a').link(href='#')
+			+e('img').image(src="./assets/images/footer-logo.png", alt="logo")
 		+e.text
 			+e('p').title Александр 
 				+e('span').title_colored Танин
