@@ -1,13 +1,13 @@
 mixin header-main()
 	+b.header-main&attributes(attributes)
 		+e.path
-			+e.item 
+			+e('a').item(href='#') 
 				| Главная
 				+e.item-arrow
-			+e.item 
+			+e.item(href='#') 
 				| Авторский блог
 				+e.item-arrow
-			+e.item 
+			+e.item(href='#') 
 				| Вся правда о второстепенных показателях в контекстной рекламе
 				+e.item-arrow
 		+e('h1').title Вся правда о второстепенных показателях в контекстной рекламе

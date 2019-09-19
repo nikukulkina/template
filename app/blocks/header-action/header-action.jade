@@ -1,20 +1,17 @@
 include /blocks/icon/icon
 include /blocks/nav/nav
-
+include /blocks/call/call
+include /blocks/phone/phone
 
 mixin header-action()
 	+b.header-action&attributes(attributes)
 		+e.contacts
 			+e('p').mail
-				+icon('telegram').img
-				+e('span').e-mail info@честный-контекст.рф
+				+e('img').img(src='/assets/images/letter.png')
+				+e('a').e-mail(href='#') info@честный-контекст.рф
 			+e.call
-				+e.messengers
-					+icon('viber').icon
-					+icon('watsup').icon
-					+icon('telegram').icon
-				+e('p').phone 8 (800) 
-					+e('span').phone_colored 551 37 01
+				+call()
+				+phone()
 		+nav([
 			{name:'Главная', href:'#'},
 			{name:'Бесплатный аудит честности', href:'#'},
