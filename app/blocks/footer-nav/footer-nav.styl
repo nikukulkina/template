@@ -13,3 +13,15 @@
 		color #ffffff
 		&:hover
 			text-decoration underline
+	@media (max-width 1000px)
+		flex-direction row
+		width 100%
+		height auto
+		justify-content space-between
+		flex-wrap nowrap
+		order 3
+		&__link
+			margin-right 8px
+	@media (max-width 520px)
+		flex-wrap wrap
+		justify-content center

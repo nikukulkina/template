@@ -5,10 +5,6 @@
 	justify-content space-between
 	align-items center
 
-	// &__inner
-	// 	display flex
-	// 	justify-content space-between
-
 	&__contacts
 		display flex
 		flex-direction column
@@ -25,3 +21,12 @@
 		transition color .3s ease-in
 		&:hover
 			color #cfd8dc
+	@media (max-width 1000px)
+		padding 20px 0
+		flex-wrap wrap
+		&__contacts
+			order 2
+	@media (max-width 480px)
+		&__contacts
+			width 100%
+			align-items center
