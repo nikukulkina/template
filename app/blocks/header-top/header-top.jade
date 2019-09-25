@@ -1,7 +1,12 @@
 include /blocks/logo/logo
 include /blocks/header-action/header-action
+include /blocks/burger-menu/burger-menu
 
 mixin header-top()
 	+b.header-top&attributes(attributes)
-		+logo()
-		+header-action()
+		+e.desktop
+			+logo()
+			+header-action()
+		+e.mobile
+			+logo()
+			+burger-menu()
