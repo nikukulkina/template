@@ -5,6 +5,7 @@
 	padding 15px 10px
 	cursor pointer
 	background-color transparent
+	border 1px solid $blue
 	border-radius 50%
 	&_scrolled
 		background-color #f5f8ff
@@ -39,3 +40,30 @@
 				transform rotate(45deg)
 			&:nth-child(3)
 				transform rotate(-45deg)
+
+	&__links
+		position absolute
+		top 70px
+		right -450%
+		padding 10px
+		display flex
+		flex-direction column
+		flex-wrap nowrap
+		width max-content
+		background-color #f5f8ff
+		border 1px solid $blue
+		transition .3s ease-in-out
+		&_active
+			right 0
+	&__link
+		height 45px
+		text-decoration none
+		color #272f31
+		background-color transparent
+		transition color .3s ease-in
+		&:hover
+			text-decoration underline
+			color $blue
+			background-color #ffffff
+
+	
