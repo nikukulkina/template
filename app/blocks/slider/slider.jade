@@ -5,24 +5,25 @@ include /blocks/icon/icon
 mixin slider()
 	+b.slider&attributes(attributes)
 		+e('h2').title Другие статьи
-		+e.slider-container.swiper-container
-			+e.slides.swiper-wrapper
-				+e.slide.swiper-slide
-					+e('img').img(src='/assets/images/slide1.png')
-					+e('p').slide-title 
-						+e('a').slide-link(href='#') Как проверить уровень настройки рекламной компании конкурента
-				+e.slide.swiper-slide
-					+e('img').img(src='/assets/images/slide2.png')
-					+e('p').slide-title 
-						+e('a').slide-link(href='#') Вся правда о второстепенных показателях в контекстной рекламе
-				+e.slide.swiper-slide
-					+e('img').img(src='/assets/images/slide1.png')
-					+e('p').slide-title
-						+e('a').slide-link(href='#') Как проверить уровень настройки рекламной компании конкурента
-				+e.slide.swiper-slide
-					+e('img').img(src='/assets/images/slide2.png')
-					+e('p').slide-title
-						+e('a').slide-link(href='#') Вся правда о второстепенных показателях в контекстной рекламе
+		+e.wrapper
+			+e.slider-container.swiper-container
+				+e.slides.swiper-wrapper
+					+e.slide.swiper-slide
+						+e('img').img(src='/assets/images/slide1.png')
+						+e('p').slide-title 
+							+e('a').slide-link(href='#') Как проверить уровень настройки рекламной компании конкурента
+					+e.slide.swiper-slide
+						+e('img').img(src='/assets/images/slide2.png')
+						+e('p').slide-title 
+							+e('a').slide-link(href='#') Вся правда о второстепенных показателях в контекстной рекламе
+					+e.slide.swiper-slide
+						+e('img').img(src='/assets/images/slide1.png')
+						+e('p').slide-title
+							+e('a').slide-link(href='#') Как проверить уровень настройки рекламной компании конкурента
+					+e.slide.swiper-slide
+						+e('img').img(src='/assets/images/slide2.png')
+						+e('p').slide-title
+							+e('a').slide-link(href='#') Вся правда о второстепенных показателях в контекстной рекламе
 			+e('button').btn-prev
 				+e('img').btn-img(src='/assets/images/left.png')
 			+e('button').btn-next

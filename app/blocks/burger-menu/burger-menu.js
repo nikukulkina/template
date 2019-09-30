@@ -18,12 +18,15 @@ export const burger = () => {
 		}
 	};
 	const menuOverlayChange = function () {
-		const body = document.querySelector('.page');
+		const body = document.body;
+		const html = document.querySelector('html');
 		overlay.classList.toggle('page-main__overlay_active');
 		if (overlay.classList.contains('page-main__overlay_active')) {
-			body.style.overflow = 'hidden';
+			body.style.overflowY = 'hidden';
+			html.style.overflowY = 'hidden';
 		}else {
-			body.style.overflow = 'auto';
+			body.style.overflowY = 'auto';
+			html.style.overflowY = 'auto';
 		}
 	};
 	const menuItemsChange = function () {
