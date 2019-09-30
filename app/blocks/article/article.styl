@@ -20,3 +20,27 @@
 		line-height 90px
 		letter-spacing .1px
 		color #89909b
+	@media(max-width 1120px)
+		&__image,
+		&__text
+			width 100%
+			text-align justify
+	@media(max-width 600px)
+		&__image
+			padding 10px 0
+		&__text
+			font-size 16px
+			line-height 20px
+		&__footer
+			margin-top 20px
+			padding-bottom 20px
+		&__published
+			font-size 14px
+			line-height 30px
+	@media(max-width 402px)
+		&__footer
+			margin-top 0
+			flex-wrap wrap
+		&__published
+			margin-bottom 10px
+			order 0		

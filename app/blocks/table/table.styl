@@ -30,8 +30,33 @@
 		line-height 30px
 		&_second-column
 			width 407px
-
 		&_title
 			width 297px
 			font-size 18px
 			font-weight 600
+	@media(max-width 600px)
+		margin-top 10px
+		font-size 14px
+		&__header,
+		&__cell
+			padding-left 10px
+			height 35px
+			font-size 14px
+		&__header
+			line-height 25px
+			&_first-column
+				width 200px
+			&_second-column
+				width 270px
+		&__cell
+			line-height 20px
+			&_second-column
+				width 270px
+			&_title
+				width 200px
+	@media(max-width 360px)
+		font-size 13px
+		&__header,
+		&__cell
+			font-size 13px
+		
